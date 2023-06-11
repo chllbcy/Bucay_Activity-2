@@ -1,0 +1,50 @@
+body {
+  background: url("bg.jpg");
+}
+
+h1 {
+  letter-spacing: 10px;
+  font-size: 50px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  font-size: 15px;
+}
+
+.tooltip::first-letter {
+  float: left;
+  line-height: 85%
+  width: .7em;
+  font-size: 300%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #fff;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 8px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::first-letter {
+  float: left;
+  line-height: 85%
+  width: .7em;
+  font-size: 400%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
